@@ -1,57 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercițiul 9: Schimbare culori de fundal</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 9</title>
+    <link rel="stylesheet" href="css/common.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-
         .widget {
             text-align: center;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        .change-color {
-            font-size: 16px;
-            padding: 10px 20px;
+        .widget p {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 48px;
+        }
+
+        .widget span {
+            font-family: monospace;
+        }
+
+        .widget button {
+            padding: 8px 12px;
+            font-size: 20px;
             cursor: pointer;
-            border: none;
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 4px;
-        }
-
-        .change-color:hover {
-            background-color: #0056b3;
-        }
-
-        .color {
-            font-weight: bold;
         }
     </style>
 </head>
 
 <body>
-    <!-- Exercițiul 9: Schimbare culori de fundal -->
+    <p><a href="index.html">Go back</a></p>
+
     <div class="widget">
-        <p>Background color: <span id="color-display" class="color">-</span></p>
-        <button type="button" class="change-color" onclick="changeBackgroundColor()">Change color</button>
+        <p>Background color: <span class="color">-</span></p>
+        <button type="button" class="change-color">Change color</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/task-09.js" type="module"></script>
 </body>
 
 </html>
