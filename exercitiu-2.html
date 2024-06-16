@@ -1,29 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 2</title>
-    <link rel="stylesheet" href="css/common.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercițiul 2: Adăugare elemente în listă</title>
     <style>
-        .item {
-            font-weight: 500;
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
 
-        .item:not(:last-child) {
-            margin-bottom: 8px;
+        #categories {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .item {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .item h2 {
+            margin: 5px 0;
         }
     </style>
 </head>
 
 <body>
-    <p><a href="index.html">Go back</a></p>
+    <!-- Exercițiul 2: Adăugare elemente în listă -->
+    <ul id="categories"></ul>
 
-    <ul id="ingredients"></ul>
-
-    <script src="js/task-02.js" type="module"></script>
+    <script src="exercitiu-2.html"></script>
 </body>
 
 </html>

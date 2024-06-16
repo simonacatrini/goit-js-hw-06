@@ -1,18 +1,29 @@
+// Se selectează elementul span#value care va afișa valoarea contorului
+const valueSpan = document.getElementById("value");
+
+// Se selectează butoanele de incrementare și decrementare
+const incrementButton = document.querySelector("[data-action='increment']");
+const decrementButton = document.querySelector("[data-action='decrement']");
+
+// Variabila care va stoca valoarea curentă a contorului
 let counterValue = 0;
-const decrementButton = document.querySelector(
-  'button[data-action="decrement"]'
-);
-const incrementButton = document.querySelector(
-  'button[data-action="increment"]'
-);
 
-const valueSpan = document.querySelector("#value");
-decrementButton.addEventListener("click", () => {
-  counterValue -= 1;
+// Funcția pentru actualizarea valorii și afișarea ei
+function updateValue() {
   valueSpan.textContent = counterValue;
+}
+
+// Click handler pentru butonul de incrementare
+incrementButton.addEventListener("click", function() {
+  counterValue++;
+  updateValue();
 });
 
-incrementButton.addEventListener("click", () => {
-  counterValue += 1;
-  valueSpan.textContent = counterValue;
+// Click handler pentru butonul de decrementare
+decrementButton.addEventListener("click", function() {
+  counterValue--;
+  updateValue();
 });
+
+// Inițializarea valorii contorului la început
+updateValue();
