@@ -43,3 +43,11 @@ button {
     display: block;
     border-radius: 8px;
 }
+.widget {
+    text-align: center;
+}
+
+button.change-color {
+    padding: 10px 20px;
+    font-size: 16px;
+}
