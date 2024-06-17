@@ -1,3 +1,4 @@
+// Matricea cu ingredientele
 const ingredients = [
   "Potatoes",
   "Mushrooms",
@@ -7,11 +8,24 @@ const ingredients = [
   "Condiments",
 ];
 
-const ulIngredients = document.getElementById("ingredients");
+
+const ingredientsList = document.getElementById('ingredients');
+
+
+const fragment = document.createDocumentFragment();
+
 
 ingredients.forEach(ingredient => {
-  const li = document.createElement("li");
+
+  const li = document.createElement('li');
+  
+  
   li.textContent = ingredient;
-  li.classList.add("item");
-  ulIngredients.appendChild(li);
+  li.classList.add('item');
+  
+
+  fragment.appendChild(li);
 });
+
+ingredientsList.appendChild(fragment);
+
